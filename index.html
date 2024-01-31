@@ -5,9 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicago Guide</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>This is an Artist Guide Through Chicago</h1>
+    <div class="container">
+
+        <div class="banner">
+            <img id="banner_img" src="banner_img.jpg" alt="picture of Chicago">
+            <div class="overlay">
+                <div class="banner_text">
+                    <h1>Welcome to Chicago</h1>
+                    <p>Explore the opportunities</p>
+                    <button class="btn" id="form_btn" type="submit">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <!--4 different modals-->
+            <div class="m_trig" id="aic">
+                <!--Trigger the Modal-->
+                <img class="tirg_img" id="aic_img" src="aic.jpeg" alt="Art Institute of Chicago picture">
+                <div class="trig_overlay">
+                    <div class="to_text">Art Institute of Chicago</div>
+                </div>
+            </div>
+            <div class="m_trig" id="mp">
+                <!--Trigger the Modal-->
+                <img class="tirg_img" id="mp_img" src="mp.png" alt="Millenium Park picture">
+                <div class="trig_overlay">
+                    <div class="to_text">Millenium Park</div>
+                </div>
+            </div>
+            <div class="m_trig" id="mca">
+                <!--Trigger the Modal-->
+                <img class="tirg_img" id="mca_img" src="mca.jpeg" alt="Museum of Contemporary Art picture">
+                <div class="trig_overlay">
+                    <div class="to_text">Museum of Contemporary Art</div>
+                </div>
+            </div>
+            <div class="m_trig" id="hpac">
+                <!--Trigger the Modal-->
+                <img class="tirg_img" id="hpac_img" src="hpac.jpeg" alt="Hyde Part Art Center picture">
+                <div class="trig_overlay">
+                    <div class="to_text">Hyde Part Art Center</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>this is the bottom text for footer</p>
+        </div>
+
+    </div>
+
+
+    
     <!--include
         Header with full screen image welcoming user
             Create a form/ survey that will "direct the user to their favorite museum"
@@ -16,7 +71,8 @@
     Art Institute of Chicago (pop up with inforamtion/ hours/ location/ map)
     Millenium Park (pop up with inforamtion/ hours/ location/ map)
     Museum of Contemporary Art (pop up with inforamtion/ hours/ location/ map)
-    Goldfinch Gallery (pop up with inforamtion/ hours/ location/ map)
+    Hyde Park Art Center (pop up with inforamtion/ hours/ location/ map)
     -->
+
 </body>
 </html>

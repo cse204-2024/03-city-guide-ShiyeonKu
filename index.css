@@ -1,0 +1,123 @@
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+}
+.container{
+    display:grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.banner{
+    max-width:100%;
+    height: 40em;
+    position:relative;
+    margin:0;
+    padding:0;
+    grid-area:header;
+    text-align:center;
+}
+.banner>img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+.overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+}
+.banner_text{
+    font-size:30px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.banner_text p{
+    font-weight:100px;
+    font-style:oblique;
+}
+.btn{
+    width:12em;
+    height:4em;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color:rgba(255, 255, 255, 0.2);
+    color:white;
+    transition:all;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    cursor:pointer;
+    border-style:none;
+    background-color:black;
+    border-radius:5px;
+    transform:scale(0.9);
+}
+.main{
+    grid-area:main;
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+.m_trig{
+    height:15em;
+    transition:all;
+    transition-duration:0.3s;
+    position:relative;
+}
+.tirg_img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.m_trig:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+.trig_overlay{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color:rgba(0,0,0,0.8);
+}
+.m_trig:hover .trig_overlay{
+    opacity:1;
+}
+.to_text{
+    font-size:1.3em;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.footer{
+    grid-area:footer;
+    width:100%;
+    height:6em;
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+.footer>p{
+    margin:2.5em;
+}
