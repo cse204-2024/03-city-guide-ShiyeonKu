@@ -7,43 +7,71 @@ document.addEventListener('click', function(e){
 
 //listen to when form opener is clicked
 
-function action (vairable){
+function action (variable){
     //grab modal and open it up
-    if (vairable =="aic_overlay"){
+    if (variable =="aic_overlay"){
         let modal = document.getElementById("m_aic");
         modal.style.display = "block";
     }
-
-    if(vairable == "mp_overlay"){
+    if(variable =="aic_close_btn"){
         let modal = document.getElementById("m_aic");
-        modal.style.display = "block";
+        modal.scrollTop = 0;
+        modal.style.display = "none";
     }
 
-    if(vairable == "mca_overlay"){
-        let modal = document.getElementById("m_aic");
+    if(variable == "mp_overlay"){
+        let modal = document.getElementById("m_mp");
         modal.style.display = "block";
     }
+    if(variable =="mp_close_btn"){
+        let modal = document.getElementById("m_mp");
+        modal.scrollTop = 0;
+        modal.style.display = "none";
+    }
 
-    if(vairable == "hpac_overlay"){
-        let modal = document.getElementById("m_aic");
+    if(variable == "mca_overlay"){
+        let modal = document.getElementById("m_mca");
         modal.style.display = "block";
+    }
+    if(variable == "mca_close_btn"){
+        let modal = document.getElementById("m_mca");
+        modal.scrollTop = 0;
+        modal.style.display = "none";
+    }
+
+    if(variable == "hpac_overlay"){
+        let modal = document.getElementById("m_hpac");
+        modal.style.display = "block";
+    }
+    if(variable == "hpac_close_btn"){
+        let modal = document.getElementById("m_hpac");
+        modal.scrollTop = 0;
+        modal.style.display = "none";
     }
 
     //if it's a form button open form button
-    if(vairable == "form_btn"){
+    if(variable == "form_btn"){
         let form = document.getElementById("interest_form");
         form.style.display = "block";
     }
 
     //if variable is close button close the display
-    if(vairable == "close_btn"){
+    if(variable == "close_btn"){
         let form = document.getElementById("interest_form");
         form.style.display = "none";
     }
+
+    //if the user clicks "learn more" lead to the website of the museum
+    if(variable =="aic_btn"){
+        window.open('https://www.artic.edu/');
+    }
+    if(variable =="mp_btn"){
+        window.open('https://www.crevecoeurmo.gov/284/Parks');
+    }
+    if(variable =="mca_btn"){
+        window.open('https://mcachicago.org/');
+    }
+    if(variable =="hpac_btn"){
+        window.open('https://www.hydeparkart.org/');
+    }
 }
-
-
-
-
-//get the <span> element that closes the modal 
-//when user click on <span>, close the modal
