@@ -13,6 +13,51 @@
 <body>
     <div class="container">
 
+        <div class="form" id="interest_form">
+            <form target="_self" method="post">
+                <fieldset>
+                    <legend>Let Us Know More About You</legend>
+                    <div id="name">
+                        <!--Name-->
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Jane">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe">
+                    </div>
+                    <div id="person">
+                        <!--What kind of person-->
+                        <label for="interest">I'm a</label>
+                        <select id="interest" name="interest">
+                            <option value="student" selected>Student</option>
+                            <option value="educator">Educator</option>
+                            <option value="visitor">Visitor</option>
+                            <option value="member">Museum Member</option>
+                        </select>
+                    </div>
+                    <div id="genre">
+                        <!--Interested Genera-->
+                        <p>I'm interested in</p>
+                        <input type="checkbox" id="genre_1" name="genre_1">
+                        <label for="genre_1">Expressionism</label>
+                        <input type="checkbox" id="genre_2" name="genre_2">
+                        <label for="genre_2">Impressionism</label>
+                        <input type="checkbox" id="genre_3" name="genre_3">
+                        <label for="genre_3">Realist Art</label>
+                        <input type="checkbox" id="genre_4" name="genre_4">
+                        <label for="genre_4">Bauhaus Art</label>
+                        <input type="checkbox" id="genre_5" name="genre_5">
+                        <label for="genre_5">Conceptual Art</label>
+                        <input type="checkbox" id="genre_6" name="genre_6">
+                        <label for="genre_6">Figurative Art</label>
+                        <input type="checkbox" id="genre_7" name="genre_7">
+                        <label for="genre_7">Other</label>
+                    </div>
+                    <button class="btn" id="submit_btn" type="button">Submit</button>
+                    <button class="btn" id="close_btn" type="button">Close</button>
+                </fieldset>
+            </form>
+        </div>
+
         <div class="banner">
             <img id="banner_img" src="banner_img.jpg" alt="picture of Chicago">
             <div class="overlay">
@@ -35,11 +80,70 @@
             </div>
             <!--modal-->
             <div class="modal" id="m_aic">
-                <span id="close">&times;</span>
+                <!--Add a way to close the modal-->
                 <!--modal content-->
                 <img class="modal_img" id="m_aic_img" src="aic.jpeg" alt="Art Institute of Chicago picture">
-                <!--create table to put in images and organize information-->
+                <h1>Art Insitute of Chicago</h1>
+                <p>Renowned art museum holding nearly 300,000 works from all over the world, spanning many centuries.</p>
+                <h2>What's On View</h2>
+                <ul>
+                    <li>Canova: Sketching in Clay</li>
+                    <li>Picasso: Drawing in Life</li>
+                    <li>Camille Claudel</li>
+                    <li>Radical Clay: Contemporary Women Artists from Japan</li>
+                    <li>By the Light of the Moon: Nighttime in Japanese Prints</li>
+                    <li>Dan Friedman: Stay Radical</li>
+                </ul>
+                <h2>Hours</h2>
+                <table>
+                    <!--put in operation hours-->
+                    <thead>
+                        <tr>
+                            <td>Day</td>
+                            <td>Hours</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>11AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>11AM - 8PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>11AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11AM - 5PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Location</h2>
+                <p>111 S Michigan Ave, Chicago, IL 60603</p>
+                <div class="google_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6168897151683!2d-87.6262935879513!3d41.87958846520041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca3e2d94695%3A0x4829f3cc9ca2d0de!2sThe%20Art%20Institute%20of%20Chicago!5e0!3m2!1sen!2sus!4v1706887315671!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="btn" id="aic_btn" type="button">Learn More</button>
+                <button class="btn" id="aic_close_btn" type="button">Close</button>
             </div>
+
+            <!--Millenium Park Modal-->
             <div class="m_trig" id="mp">
                 <!--Trigger the Modal-->
                 <img class="tirg_img" id="mp_img" src="mp.png" alt="Millenium Park picture">
@@ -47,20 +151,211 @@
                     <div class="to_text" id="mp_overlay">Millenium Park</div>
                 </div>
             </div>
+            <!--modal-->
+            <div class="modal" id="m_mp">
+                <!--Add a way to close the modal-->
+                <!--modal content-->
+                <img class="modal_img" id="m_mp_img" src="mp.jpeg" alt="Millenium Park picture">
+                <h1>Millenium Park</h1>
+                <p>24.5-acre green space with a video display, the reflective "Bean" sculpture & an outdoor theater.</p>
+                <h2>What's On View</h2>
+                <ul>
+                    <li>Perminant Public Sculpture: Cloudgate</li>
+                </ul>
+                <h2>Hours</h2>
+                <table>
+                    <!--put in operation hours-->
+                    <thead>
+                        <tr>
+                            <td>Day</td>
+                            <td>Hours</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>6AM - 11PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Location</h2>
+                <p>201 E Randolph St, Chicago, IL 60602</p>
+                <div class="google_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11881.916412755361!2d-87.6405758445801!3d41.882552399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca68a4f9c03%3A0x44182cdcb5a91004!2sMillennium%20Park!5e0!3m2!1sen!2sus!4v1706890567717!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="btn" id="mp_btn" type="button">Learn More</button>
+                <button class="btn" id="mp_close_btn" type="button">Close</button>
+            </div>
+
+            <!--Museum of Contemporary Art Modal-->
             <div class="m_trig" id="mca">
                 <!--Trigger the Modal-->
-                <img class="tirg_img" id="mca_img" src="mca.jpeg" alt="Museum of Contemporary Art picture">
-                <div class="trig_overlay">
-                    <div class="to_text" id="mca_overlay">Museum of Contemporary Art</div>
-                </div>
+                    <img class="tirg_img" id="mca_img" src="mca.jpeg" alt="Museum of Contemporary Art picture">
+                    <div class="trig_overlay">
+                        <div class="to_text" id="mca_overlay">Museum of Contemporary Art</div>
+                    </div>
             </div>
+            <!--modal-->
+            <div class="modal" id="m_mca">
+                <!--Add a way to close the modal-->
+                <!--modal content-->
+                <img class="modal_img" id="m_mca_img" src="mca.jpeg" alt="Museum of Contemporary Art picture">
+                <h1>Museum of Contemporary Art Chicago</h1>
+                <p>Downtown museum showcasing post-World War II paintings, sculptures, photos, videos & performances.</p>
+                <h2>What's On View</h2>
+                <ul>
+                    <li>Atrium Project: Lotus L. Kang</li>
+                    <li>Faith Ringgold: American People</li>
+                    <li>Endless</li>
+                    <li>Rebecca Morris: 2001-2022</li>
+                    <li>entire horizontes: Art and Activism Between Chicago and Puerto Rico</li>
+                    <li>Descending the Staircase</li>
+                </ul>
+                <h2>Hours</h2>
+                <table>
+                    <!--put in operation hours-->
+                    <thead>
+                        <tr>
+                            <td>Day</td>
+                            <td>Hours</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10AM - 9PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10AM - 5PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10AM - 5PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Location</h2>
+                <p>220 E Chicago Ave, Chicago, IL 60611</p>
+                <div class="google_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11879.187206869292!2d-87.63128792838029!3d41.89722691178939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd355023b7029%3A0x1ef706cc2745f0b2!2sMuseum%20Of%20Contemporary%20Art%20Chicago!5e0!3m2!1sen!2sus!4v1706890969043!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="btn" id="mca_btn" type="button">Learn More</button>
+                <button class="btn" id="mca_close_btn" type="button">Close</button>
+            </div>
+
+            <!--Hyde Park Art Center Modal-->
             <div class="m_trig" id="hpac">
                 <!--Trigger the Modal-->
-                <img class="tirg_img" id="hpac_img" src="hpac.jpeg" alt="Hyde Part Art Center picture">
+                <img class="tirg_img" id="hpac_img" src="hpac.jpeg" alt="Hyde Park Art Center picture">
                 <div class="trig_overlay">
-                    <div class="to_text" id="hpac_overlay">Hyde Part Art Center</div>
+                    <div class="to_text" id="hpac_overlay">Hyde Park Art Center</div>
                 </div>
             </div>
+            <!--modal-->
+            <div class="modal" id="m_hpac">
+                <!--Add a way to close the modal-->
+                <!--modal content-->
+                <img class="modal_img" id="m_hpac_img" src="hpac.jpeg" alt="Hyde Park Art Center picture">
+                <h1>Hyde Park Art Center</h1>
+                <p>Nonprofit visual arts center exhibiting work by emerging or under-recognized contemporary artists.</p>
+                <h2>What's On View</h2>
+                <ul>
+                    <li>Candace Hunter: The Alien-Nations and Sovereign States of Octavia E Butler</li>
+                    <li>Marian Carow: Salvages</li>
+                    <li>Beneath the Visible</li>
+                    <li>Bad at Sports: Bad @ Reality</li>
+                    <li>Kay Rosen: Don't Look Back</li>
+                </ul>
+                <h2>Hours</h2>
+                <table>
+                    <!--put in operation hours-->
+                    <thead>
+                        <tr>
+                            <td>Day</td>
+                            <td>Hours</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>10AM - 7PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10AM - 7PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10AM - 7PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10AM - 7PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10AM - 4:30PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10AM - 4PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10AM - 4PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Location</h2>
+                <p>5020 S Cornell Ave, Chicago, IL 60615</p>
+                <div class="google_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11896.559959737206!2d-87.59706392843903!3d41.80374463531344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e29708768adcf%3A0x33cae7de32bdad79!2sHyde%20Park%20Art%20Center!5e0!3m2!1sen!2sus!4v1706891368289!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="btn" id="hpac_btn" type="button">Learn More</button>
+                <button class="btn" id="hpac_close_btn" type="button">Close</button>
+            </div>
+
         </div>
 
         <div class="footer">
@@ -68,9 +363,7 @@
         </div>
 
     </div>
-
-
-    
+   
     <!--include
         Header with full screen image welcoming user
             Create a form/ survey that will "direct the user to their favorite museum"

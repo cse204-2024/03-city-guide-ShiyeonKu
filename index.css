@@ -100,6 +100,7 @@ body{
 .m_trig:hover .trig_overlay{
     opacity:1;
 }
+/*
 .modal{
     display:none;
     position:fixed;
@@ -117,6 +118,16 @@ body{
     width: 80%;
     max-width: 100%;
 }
+*/
+.modal{
+    z-index:1;
+    width:1200px;
+    height:800px;
+
+}
+.modal_img{
+    width:70%;
+}
 .to_text{
     font-size:1.3em;
     color:white;
@@ -130,6 +141,88 @@ body{
     text-decoration:underline;
     font-style:oblique;
     cursor:pointer;
+}
+.form{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:1;
+    width:700px;
+    height:700px;
+    border:10px;
+    align-items:center;
+    text-align:center;
+    background-color:white;
+    border-radius:5px;
+}
+form{
+    margin:8%;
+    width: 100%;
+    height: 100%;
+}
+fieldset{
+    width: 80%;
+    height: 80%;
+    border-radius:5px;
+}
+.form div,button{
+    margin-top:10%;
+}
+.form button{
+    width:12em;
+    height:4em;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius:5px;
+    background-color:rgba(0, 0, 0, 0.2);
+    color:black;
+    transition:all;
+    transition-duration: 0.3s;
+}
+.form button:hover{
+    cursor:pointer;
+    border-style:none;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    transform:scale(0.9);
+}
+.form legend{
+    font-size:20px;
+    font-weight:700;
+}
+.form p{
+    font-size:14px;
+}
+label{
+    font-size:14px;
+    padding:10px;
+    display:inline-block;
+}
+input[type=text]{
+    width:20%;
+    padding:10px 10px;
+    margin:10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+select{
+    width:60%;
+    height:40px;
+    padding:10px;
+    margin:10px;
+    appearance:none;
+    background-color:black;
+    color:white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type=checkbox]{
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
 }
 
 .footer{
