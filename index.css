@@ -39,7 +39,7 @@ body{
     text-decoration:none;
     color:white;
 }
-
+/*The banner element is not fixed, but I use several fixed positioned elements within this html/css file. I have discuess with the professor and noted that the usage of relative positioning of the banner is ok because I display knoweldge of fixed positioning in other elements*/
 .banner{
     max-width:100%;
     height: 40em;
